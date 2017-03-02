@@ -6,3 +6,110 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	background-image: url("images/bg.jpg");
+}
+
+header{
+	background: white;
+	height: 300px
+	width:700px;
+	margin: auto;
+	display: flex;
+
+}
+
+main{
+	display: flex;
+	background: white;
+	height: 400px;
+	width:700px;
+	margin: auto;
+}
+
+#container{
+	width: 700px;
+	background: green;
+	padding: 10px;
+	
+}
+
+#container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.skateboarders{
+	position: relative;
+}
+
+.skateboarders div{
+	color: white;
+	float: left;
+	border: 2px solid white;
+	height: 150px;
+	width: 200px;
+	line-height: 150px;
+	text-align: center;
+	clear:left;
+}
+
+.skateboarders div:first-child{
+	background: url("images/sk8er-4.png");
+	
+}
+
+.skatboarders div:nth-child(2){
+	background-image: url("images/sk8er-3.png");
+}
+
+.skateboarders div:nth-child(3){
+	width: 400px;
+	clear:left;
+	background-image: url("images/sk8er-1.png");
+}
+
+.skateboarders div:nth-child(4){
+	height: 300px;
+	line-height: 300px;
+	margin-top: -150px;
+	background-image: url("images/sk8er-2.png");
+}
+
+.skateboarders .arrow {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	background: red;
+	position: absolute;
+	top:75px;
+	left:-200px;
+}
+
+.boards{
+	display: flex;
+	background: white;
+	height: 350px;
+	width: 700px;
+	margin: auto;
+}
+
+footer{
+	display: flex;
+	background: white;
+	font-family: Verdana, Helvetica, Tahoma, sans-serif;
+	font-size: 16px
+	font-style: bold;
+	height: 400px;
+	width: 700px;
+	margin: auto;
+}
+
+form, .contact{
+	display:flex;
+}
+
+footer p:last-child{
+	font-size: 12px
+}
