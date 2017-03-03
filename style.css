@@ -6,8 +6,8 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-	background: black url("images/bg.jpg");
+body{
+	background-image: linear-gradient(to bottom, rgba(48,46,47, .75) 0%,rgba(48,46,47, .75)100%),url("images/bg.jpg");
 	
 }
 
@@ -19,7 +19,7 @@ header{
 	height: 150px;
 	width:1000px;
 	margin: auto;
-	margin-bottom: 10px;
+
 }
 
 .subscribe, .social, .buttons{
@@ -49,15 +49,17 @@ nav {
 	padding-left:0;
 }
 
-.buttons li{
-
+.navbar{
+	outline: none;
+	border:0px;
 	list-style: none;
 	height:40px;
+	width: 220px;
 	color: white;
 	font-size: 18px;
 	text-align: center;
 	background: rgb(180, 41, 46);
-	box-shadow: 0px 5px 0px rgba(240,240,240, .5);
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
 	padding:10px;
 	
 }
@@ -73,7 +75,8 @@ nav {
 	margin-bottom: 10px;
 	background-position-x: -171px;
 	background-position-y:-151px;
-	box-shadow: 0px 5px 0px rgba(240,240,240, .5);
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
+	margin-bottom: 20px;
 }
 
 .hero img{
@@ -90,16 +93,16 @@ main {
 	height: 375px;
 	width:1000px;
 	margin: auto;
-	box-shadow: 0px 5px 0px rgba(240,240,240, .5);
 	
+	margin-bottom: 20px;
 }
 
 main div{
 	width: 30%;
 	height: 375px;
 	background: white;
-	overflow: auto;
 	padding:20px;
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
 	
 }
 
@@ -159,7 +162,7 @@ main div{
 	align-content: center;
 	text-align: center;
 	word-wrap: normal;
-	box-shadow: 0px 5px 0px rgba(250,250,250, .5);
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
 	padding:50px;
 
 }
@@ -200,30 +203,35 @@ main div{
 	border:5px solid white;
 	background-position-x: -389px;
 	background-position-y:1px;
-	padding:237px 0px 0px 0px;
+	padding:237px 0px 0px;
 
 }
 
 .skateboarders .arrow {
-	width: 200px;
+	color: white;
+	font-family: Verdana, Helvetica, Arial, Tahoma, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	width: 300px;
 	height: 50px;
-	line-height: 50px;
-	background: red;
+	background: rgb(180, 41, 46);
 	top:70px;
-	left:-250px;
+	left:-350px;
 	position: absolute;
-	box-shadow: 0px 5px 0px rgba(240,240,240, .5);
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
+
 }
 
-.skateboarders .arrow::after{
-	width: 0;
-	height: 0;
-	border-top: 35px solid transparent;
-	border-left: 50px solid red;
-	border-bottom: 35px solid transparent;
-	position: absolute;
-	top: 70px;
-	left: 0px;
+.arrow:after{
+	position: inherit;
+	content: "";
+	height: 0px;
+	width: 0px;
+	border-top: 50px solid transparent;
+	border-bottom: 52px solid transparent;
+	border-left: 31px solid rgb(180, 41, 46);
+	top:0px;
+	left:300px;
 }
 
 .boards{
@@ -234,7 +242,7 @@ main div{
 	width: 1000px;
 	margin: auto;
 	margin-bottom: 20px;
-	box-shadow: 0px 5px 0px rgba(240,240,240, .5);
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
 }
 
 footer{
@@ -257,12 +265,29 @@ footer{
 	flex-wrap: wrap;
 }
 
+.smallsocial {
+	width:150px;
+	height: 65px;
+	justify-content: space-between;
+	font-size: 24px;
+}
+
 .contact, form{
-	width: 40%;
+	width: 48%;
+	padding-right: 40px;
+}
+
+.contact{
+
+}
+
+form{
+	margin-top: 25px;
+	margin-bottom: 15px;
 }
 
 .pushme{
-
+	margin-left: 200px;
 	background: rgb(180, 41, 46);
 	width: 200px;
 	height: 30px;
@@ -271,6 +296,7 @@ footer{
 	font-size: 16px;
 	border:none;
 	outline: none;
+	margin-top:15px;
 }
 
 input{
@@ -281,7 +307,7 @@ input{
 
 textarea{
 	display: flex;
-	width: 300px;
+	width: 400px;
 }
 
 footer p:last-child{
