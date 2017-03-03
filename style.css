@@ -260,6 +260,18 @@ main div{
 	left:300px;
 
 }
+.arrow:before{
+	position: inherit;
+	content: "";
+	height: 0px;
+	width: 0px;
+	border-top: 56px solid transparent;
+	border-bottom: 59px solid transparent;
+	border-left: 35px solid rgba(240, 240, 240, .15);
+	top:-1px;
+	left:300px;
+
+}
 
 .boards{
 	display: flex;
