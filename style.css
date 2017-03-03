@@ -34,7 +34,10 @@ header{
 	color: white;
 	font-size:35px;
 }
-
+.social{
+	display: flex;
+	justify-content: flex-end;
+}
 nav {
 	width:100%;
 }
@@ -117,7 +120,7 @@ main div{
 .body{
 	font-family: Verdana, Helvetica, Arial, Tahoma, sans-serif;
 	font-size: 12px;
-	line-height: 1.5;
+	line-height: 2.0;
 	color: rgb(118,118,118);
 
 }
@@ -157,6 +160,7 @@ main div{
 	text-align: center;
 	word-wrap: normal;
 	box-shadow: 0px 5px 0px rgba(250,250,250, .5);
+	padding:50px;
 
 }
 
@@ -185,6 +189,7 @@ main div{
 	background-position-x: -22px;
 	background-position-y:-67px;
 	margin:0px 22px 0px 0px;
+	padding: 100px;
 }
 
 .skateboarders div:nth-child(4){
@@ -195,6 +200,7 @@ main div{
 	border:5px solid white;
 	background-position-x: -389px;
 	background-position-y:1px;
+	padding:237px 0px 0px 0px;
 
 }
 
@@ -249,7 +255,7 @@ footer{
 }
 
 form, .contact{
-	flex: 1 0 48%;
+
 }
 
 
