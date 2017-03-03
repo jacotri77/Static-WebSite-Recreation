@@ -13,7 +13,7 @@ body{
 
 header{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	color: white;
 	height: 150px;
@@ -22,21 +22,44 @@ header{
 
 }
 
-.subscribe, .social, .buttons{
+.buttons{
 	background: transparent;
 	font-family: Verdana, Helvetica, Arial, Tahoma, sans-serif;
 	font-size: 25px;
 	margin:0px;
+}
+.subscribe{
+	display: flex;
+	background: transparent;
+	font-family: Verdana, Helvetica, Arial, Tahoma, sans-serif;
+	font-size: 18px;
+	margin:0px;
+	width: 200px;
+	padding-left: 470px;
+	line-height: 20px;
+	padding-top:20px;
 }
 
 .subscribe:after {
 	content: " \B7 ";
 	color: white;
 	font-size:35px;
+	padding-left: 10px;
+	margin-left: 10px;
 }
 .social{
 	display: flex;
 	justify-content: flex-end;
+	height: 50px;
+	border-left: 6px dotted white;
+	
+}
+
+i{
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
+	width:50px;
+	height: 50px;
+	text-align: center;
 }
 nav {
 	width:100%;
@@ -163,7 +186,7 @@ main div{
 	text-align: center;
 	word-wrap: normal;
 	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
-	padding:50px;
+	
 
 }
 
@@ -173,6 +196,7 @@ main div{
 	background-position-x: -145px;
 	background-position-y: -26px;
 	margin:5px 29px 15px 0px;
+	padding-top:60px;
 	
 }
 
@@ -182,6 +206,7 @@ main div{
 	background-position-x: -1px;
 	background-position-y:-1px;
 	margin:5px 22px 15px 0px;
+	padding-top:60px;
 }
 
 .skateboarders div:nth-child(3){
@@ -203,7 +228,7 @@ main div{
 	border:5px solid white;
 	background-position-x: -389px;
 	background-position-y:1px;
-	padding:237px 0px 0px;
+	padding:215px 0px 0px;
 
 }
 
@@ -213,12 +238,13 @@ main div{
 	font-size: 20px;
 	text-align: center;
 	width: 300px;
-	height: 50px;
+	height: 100px;
 	background: rgb(180, 41, 46);
 	top:70px;
 	left:-350px;
 	position: absolute;
 	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
+	padding-top:40px;
 
 }
 
@@ -232,6 +258,7 @@ main div{
 	border-left: 31px solid rgb(180, 41, 46);
 	top:0px;
 	left:300px;
+
 }
 
 .boards{
@@ -257,7 +284,7 @@ footer{
 	width: 1000px;
 	margin: auto;
 	margin-bottom: 20px;
-	box-shadow: 0px 5px 0px rgba(240,240,240, .5);
+	box-shadow: 0px 5px 0px rgba(240,240,240, .15);
 }
 
  .titles, .smallsocial, .body, .contact, form {
@@ -266,7 +293,7 @@ footer{
 }
 
 .smallsocial {
-	width:150px;
+	width:200px;
 	height: 65px;
 	justify-content: space-between;
 	font-size: 24px;
@@ -277,37 +304,51 @@ footer{
 	padding-right: 40px;
 }
 
-.contact{
-
-}
-
 form{
 	margin-top: 25px;
 	margin-bottom: 15px;
+}
+
+.contact .titles{
+	margin-bottom: 0px;
+}
+
+.contact{
+	margin-right: 20px;
 }
 
 .pushme{
 	margin-left: 200px;
 	background: rgb(180, 41, 46);
 	width: 200px;
-	height: 30px;
+	height: 40px;
 	color: white;
 	font-family: Verdana, Helvetica, Tahoma, sans-serif;
 	font-size: 16px;
-	border:none;
+	border:0;
 	outline: none;
 	margin-top:15px;
 }
 
 input{
+	border:1px solid rgb(53, 54, 50);
 	display: flex;
 	width: 400px;
-	height: 30px;
+	height: 40px;
+	padding-left: 10px;
+	padding-top:px;
+	box-shadow: 3px 3px 0px rgba(40,40,40, .25) inset;
 }
 
 textarea{
+	border:1px solid rgb(53,54,50);
 	display: flex;
+	resize: none;
 	width: 400px;
+	height: 75px;
+	padding-left: 10px;
+	padding-top:8px;
+	box-shadow: 3px 3px 0px rgba(40,40,40, .25) inset;
 }
 
 footer p:last-child{
