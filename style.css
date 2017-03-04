@@ -52,7 +52,7 @@ header{
 	justify-content: flex-end;
 	height: 50px;
 	border-left: 6px dotted white;
-	
+	padding-top: 10px;
 }
 
 i{
@@ -94,7 +94,7 @@ nav {
 	height: 400px;
 	background: black url("images/top-image.png") no-repeat;
 	margin: auto;
-	border: 4px solid white;
+	border: 8px solid white;
 	margin-bottom: 10px;
 	background-position-x: -171px;
 	background-position-y:-151px;
@@ -110,13 +110,47 @@ nav {
 	object-fit: none;
 }
 
+.radiobutton{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 20px;
+
+
+}
+input[type='radio']{
+	margin-right: 15px;
+}
+input[type='radio'] {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border:4px solid white;
+    border-radius:50%;
+    outline:none;
+    box-shadow:0 0 15px 0px white inset;
+}
+input[type='radio']:hover {
+    box-shadow:0 0 5px 0px rgb(186,62,69) inset;
+}
+input[type='radio']:before {
+    content:'';
+    display:block;
+    width:60%;
+    height:60%;
+    margin: 20% auto;    
+    border-radius:50%;    
+}
+input[type='radio']:checked:before {
+    background:rgb(186,62,69) ;
+}
+
 main {
 	display: flex;
 	justify-content: space-between;
 	height: 375px;
 	width:1000px;
 	margin: auto;
-	
 	margin-bottom: 20px;
 }
 
