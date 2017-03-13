@@ -7,7 +7,7 @@ html {
 }
 
 body{
-	background-image: linear-gradient(to bottom, rgba(48,46,47, .75) 0%,rgba(48,46,47, .75)100%),url("img/bg.jpg");
+	background-image: linear-gradient(to bottom, rgba(48,46,47, .75) 0%,rgba(48,46,47, .75)100%),url("images/bg.jpg");
 	
 }
 
@@ -92,7 +92,7 @@ nav {
 	display: flex;
 	width: 1000px;
 	height: 400px;
-	background: black url("img/top-image.png") no-repeat;
+	background: black url("images/top-image.png") no-repeat;
 	margin: auto;
 	border: 8px solid white;
 	margin-bottom: 10px;
@@ -225,7 +225,7 @@ main div{
 }
 
 .skateboarders div:first-child{
-	background: url("img/sk8er-4.png") no-repeat;
+	background: url("images/sk8er-4.png") no-repeat;
 	border:5px solid white;
 	background-position-x: -145px;
 	background-position-y: -26px;
@@ -235,7 +235,7 @@ main div{
 }
 
 .skateboarders div:nth-child(2){
-	background: url("img/sk8er-3.png") no-repeat;
+	background: url("images/sk8er-3.png") no-repeat;
 	border:5px solid white;
 	background-position-x: -1px;
 	background-position-y:-1px;
@@ -246,7 +246,7 @@ main div{
 .skateboarders div:nth-child(3){
 	width: 661px;
 	clear:left;
-	background: url("img/sk8er-1.png") no-repeat;
+	background: url("images/sk8er-1.png") no-repeat;
 	border:5px solid white;
 	background-position-x: -22px;
 	background-position-y:-67px;
@@ -258,7 +258,7 @@ main div{
 	height: 475px;
 	line-height: 30px;
 	margin-top: -245px;
-	background: url("img/sk8er-2.png")no-repeat;
+	background: url("images/sk8er-2.png")no-repeat;
 	border:5px solid white;
 	background-position-x: -389px;
 	background-position-y:1px;
